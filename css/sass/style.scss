@@ -1,0 +1,117 @@
+
+@mixin debug($color : red) {
+    outline: solid 1px $color !important;
+}
+
+// 首頁的menu 
+
+body{
+	// font-size: 100%;
+}
+// 字的主顏色
+$text-color:#212121;
+// 店名的顏色 
+$title-color:#222;
+
+// 去掉bootstrap本身的樣式 
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: #fff;
+}
+// 網站的navigation
+.navbar-site{
+   	font-weight: bold;
+   	// nav的item置中
+   	.nav-center{
+   		width: 100%;
+	    text-align: center;
+	    > li {
+	      float: none;
+	      display: inline-block;
+	    }
+   	}
+
+   	// nav 連結
+	@at-root #{&}__nav-link {
+		:hover{
+			border-bottom: 1px solid #212121;
+		}
+		color:$text-color;
+		// 連結的標題
+		#{&}__text{
+			padding:0;
+			margin: 1em;
+			// padding-bottom: 0;
+			color:$text-color;
+			&--active{
+				// color:$text-color;
+				border-bottom: 1px solid #212121;
+			}
+		}
+	}
+	&__site-title{
+		margin: 6em;
+		margin-bottom: 1.2em;
+		&__text{
+			text-align: center;
+			width: 6em;
+			font-weight: normal;
+			font-size: 2em;
+			font-weight: 500;
+			color: $title-color;
+			&:hover{
+				opacity: .7;
+			}
+		}
+	}
+
+   	// 切換到小螢幕的時候 
+    @media (max-width:48em) {
+    	// 切換背景色 
+        background-color: #212121;
+       	// 縮小時要被切換的按鈕 
+        .navbar-toggle {
+			border-color: #333;
+			// 設定 bar
+			.icon-bar{
+  				background-color: #fff;
+			}
+		}
+		// 品牌名稱
+		.navbar-brand{
+  			color: #fff;
+		}
+		// 縮小時標題
+		@at-root #{&}__title {
+			color:#fff;
+			float: left;
+			height: 50px;
+			padding: 15px 15px;
+			font-size: 18px;
+			line-height: 20px;
+		}
+
+	}
+}
+// 分類 
+.category{
+	width:70%;
+	text-align:center;
+	@at-root #{&}__item {
+		margin: 2em;
+		color :$text-color;
+	  	font-size: 0.8em;
+	  	text-transform: uppercase;
+	  	letter-spacing: 1px;
+	  	font-weight: bold;
+	  	font-style: normal;
+	  	line-height: 1.3em;
+	  	opacity:.5;
+
+	  	&--active{
+		  	opacity:1;
+	  	}
+	}
+}
+
+

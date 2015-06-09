@@ -1,0 +1,20 @@
+@media (max-width: 48em) {
+  .navbar-site {
+    background-color: #212121; }
+    /* line 13, /Library/WebServer/Documents/RWD.demo/css/sass/style.scss */
+    .navbar-site .navbar-toggle {
+      border-color: #333; }
+      /* line 16, /Library/WebServer/Documents/RWD.demo/css/sass/style.scss */
+      .navbar-site .navbar-toggle .icon-bar {
+        background-color: #fff; }
+    /* line 21, /Library/WebServer/Documents/RWD.demo/css/sass/style.scss */
+    .navbar-site .navbar-brand {
+      color: #fff; } }
+
+/*# sourceMappingURL=style.css.map */
+.center-block {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    
+}

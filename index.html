@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
     <meta charset="UTF-8">
     <title>first demo</title>
     <!-- bootstrap   -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" >
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+       
     <!--[if lt IE 9]>
         讓IE8支援html5
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
@@ -16,6 +18,56 @@
     <![endif]-->
 </head>
 <body>
+    <nav class="navbar navbar-site">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a href="#" class="navbar-site__title navbar-toggle">Galapagos</a>
+        </div>
+        <!--   menu bar     -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav center-block nav-center ">
+                <li class="navbar-site__nav-link"><a class="navbar-site__nav-link__text navbar-site__nav-link__text--active" href="#">SHOP</a></li>
+                <li class="navbar-site__nav-link"><a class="navbar-site__nav-link__text" href="#about">OUR STORY</a></li>
+                <li class="navbar-site__nav-link"><a class="navbar-site__nav-link__text" href="#contact">GALLERY</a></li>
+                <li class="navbar-site__nav-link"><a class="navbar-site__nav-link__text" href="#contact">BLOG</a></li>
+                <li class="navbar-site__nav-link"><a class="navbar-site__nav-link__text" href="#contact">CONTACT</a></li>
+                <li class="navbar-site__nav-link"><a class="navbar-site__nav-link__text" href="#contact">READ ME</a></li>
+            </ul>
+            <div class="navbar-site__site-title">
+                <span class="navbar-site__site-title__text center-block">Galapagos</span>
+            </div>
+        </div>
+      </div>
+    </nav>
+    
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list-inline category center-block">
+                    <li class="category__item category__item--active ">ALL</li>
+                    <li class="category__item">ACCESSORIES</li>
+                    <li class="category__item">HATS</li>
+                    <li class="category__item">ASCARVESLL</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <img src="http://static1.squarespace.com/static/5230da17e4b0a637f7e627b7/527d4c54e4b0ae4bbb9628c7/527d4c70e4b040e4b628be4d/1383943290258/il_fullxfull.447599148_osb1.jpg?format=1000w" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="http://static1.squarespace.com/static/5230da17e4b0a637f7e627b7/527d4c54e4b0ae4bbb9628c7/527d533be4b0ce906bca3503/1383945031980/il_fullxfull.461460203_crf0.jpg"  class="img-responsive" alt="">
+
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
